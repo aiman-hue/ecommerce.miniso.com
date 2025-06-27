@@ -1,0 +1,287 @@
+/* Root and general background */
+/* style.css */
+.root {
+    -fx-background-image: url("file:/C:/Users/HAROON%20TRADERS/Downloads/toy-shopping-trolley-present-near-laptop-keyboard.jpg");
+
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+ 
+.vbox {
+    
+    -fx-background-image: url("file:/C:/Users/HAROON%20TRADERS/Downloads/toy-shopping-trolley-present-near-laptop-keyboard.jpg");
+    -fx-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-text-fill: #1a1a1a; /* Deep black */
+}
+
+/* Screen title */
+.screen-title {
+    -fx-font-size: 28px;
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(231, 76, 60, 0.4), 6, 0, 0, 1);
+}
+
+/* Product card */
+.product-card {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e74c3c;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 14px;
+    -fx-spacing: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(231, 76, 60, 0.15), 10, 0, 0, 6);
+    -fx-alignment: top-center;
+    -fx-cursor: hand;
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+}
+
+.product-card:hover {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #c0392b;
+    -fx-effect: dropshadow(gaussian, rgba(192, 57, 43, 0.3), 15, 0.2, 0, 8);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Product name label */
+.product-name {
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: #000000;
+    -fx-text-alignment: center;
+}
+
+/* Price labels */
+.price-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #2c3e50;
+}
+
+.discounted-price {
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+}
+
+.discount-percent {
+    -fx-text-fill: #c0392b;
+    -fx-font-style: italic;
+    -fx-font-size: 14px;
+}
+
+/* About section */
+.about-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #1a1a1a;
+    -fx-wrap-text: true;
+    -fx-padding: 8 0 12 0;
+}
+
+/* Review entry */
+.review-entry {
+    -fx-background-color: #fff;
+    -fx-padding: 10 14;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-border-color: #e74c3c;
+    -fx-border-width: 1px;
+    -fx-text-fill: #000;
+    -fx-font-size: 14px;
+}
+
+/* Button styles */
+.button {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 30px;
+    -fx-cursor: hand;
+    -fx-padding: 8px 18px;
+    -fx-border-radius: 30px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 4, 0, 2, 2);
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #e74c3c;
+}
+
+.button:hover {
+    -fx-background-color: #c0392b;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.button:pressed {
+    -fx-background-color: #a93226;
+}
+
+/* Cart button */
+.button-add-to-cart {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+}
+
+.button-add-to-cart:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* Wishlist */
+.button-add-to-wishlist {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e74c3c;
+    -fx-border-width: 2px;
+    -fx-text-fill: #e74c3c;
+    -fx-font-size: 16px;
+}
+
+.button-add-to-wishlist:hover {
+    -fx-background-color: #fff0f0;
+}
+
+/* View */
+.button-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e74c3c;
+    -fx-border-width: 2px;
+    -fx-text-fill: #e74c3c;
+}
+
+.button-view:hover {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: #ffffff;
+}
+
+/* Checkout / Refresh */
+.button-refresh {
+    -fx-background-color: white;
+    -fx-text-fill: #d32f2f;
+    -fx-border-color: #d32f2f;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-font-weight: bold;
+    -fx-padding: 6px 14px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 3, 0, 1, 1);
+}
+
+.button-refresh:hover {
+    -fx-background-color: #d32f2f;
+    -fx-text-fill: white;
+}
+
+/* Detail box */
+.detail-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #d32f2f;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 20px;
+}
+
+/* Feedback & review labels */
+.input-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-text-fill: #e74c3c;
+    -fx-padding: 10 0 5 0;
+}
+
+.text-area {
+    -fx-border-color: #e74c3c;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 10;
+    -fx-font-size: 14px;
+    -fx-text-fill: #1a1a1a;
+    -fx-background-color: #fff;
+    -fx-pref-width: 400px;
+    -fx-wrap-text: true;
+    -fx-cursor: text;
+}
+
+.text-area:focused {
+    -fx-border-color: #c0392b;
+}
+
+/* Star rating */
+.star-box {
+    -fx-spacing: 10;
+    -fx-padding: 5 0 10 0;
+    -fx-alignment: center-left;
+}
+
+.star {
+    -fx-font-size: 28px;
+    -fx-text-fill: #bdc3c7;
+    -fx-cursor: hand;
+}
+
+.star:hover, .star.filled {
+    -fx-text-fill: #e74c3c;
+    -fx-effect: dropshadow(gaussian, rgba(231, 76, 60, 0.8), 4, 0, 0, 2);
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+/* Scroll pane */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50; /* Dark blue-gray */
+    -fx-padding: 4 0 2 0;   /* Top, Right, Bottom, Left */
+}
+
+
+/* Auth box */
+.auth-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-radius: 12px;
+    -fx-background-radius: 12px;
+    -fx-padding: 30px;
+    -fx-spacing: 12px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 8, 0, 0, 4);
+    -fx-alignment: center;
+    -fx-max-width: 350px;
+}
+.auth-box Label {
+    -fx-alignment: center-left;  /* Ensures text aligns left inside label */
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* Input fields */
+.auth-box TextField,
+.auth-box PasswordField {
+    -fx-pref-width: 250px;
+}
+
+/* Buttons */
+.auth-box Button {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-pref-width: 120px;
+    -fx-cursor: hand;
+}
+
+.screen-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-padding: 0 0 20 0;
+}
+
+.message-label {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
